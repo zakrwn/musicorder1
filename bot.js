@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "1";
+const prefix = "#";
 /////////////////////////
 ////////////////////////
 
@@ -348,7 +348,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
 
-    if (msg.content == '1join') {
+    if (msg.content == '#join') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
